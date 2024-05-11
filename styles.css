@@ -6,7 +6,7 @@
 
 main section{
     background-color: #44594b;
-    height: 100vh;
+   
     width: 80vw;
     display: flex;
     justify-content: right;
@@ -27,7 +27,7 @@ main section .contaBox{
     display: flex;
     flex-wrap: wrap;
     width: 54vw;
-    height: 108vh;
+ 
     gap: 2vw;
     position: relative;
     bottom: 70px;
