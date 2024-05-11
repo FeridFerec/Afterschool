@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main section{
+    background-color: #44594b;
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    flex-direction: column;
+}
+main section .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main section .imgBox {
+    width: 50vw;
+    height: 60vh;
+
+}
+main section .contaBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 54vw;
+    height: 108vh;
+    gap: 2vw;
+    position: relative;
+    bottom: 70px;
+    justify-content: center;
+    flex-direction: column;
+}
+main section .contaBox .box{
+    border: 0.5px solid grey;
+    background-color: #ffffff;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+main section .contaBox .box i{
+    background-color: gray;
+    height: 16vh;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 40px;
+}
+main .bigBox{
+    border: 0.5px solid gray;
+    position: absolute;
+    right: 30px;
+    height: 48vh;
+    width: 24vw;
+    background-color: #ffffff;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   text-align: center;
+   padding: 0px 30px;
+}
+main .bigBox h1{
+    font-size: 25px;
+}
+main .bigBox p a{
+    text-decoration: underline black;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+@media(max-width:1200px){
+    main{
+        background-color: #44594b;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    main section{
+        height: fit-content;
+    }
+    main section .contaBox{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: fit-content;
+    }
+    main .bigBox{
+        position: relative;
+        display: flex;
+        top: 50px;
+        left: 0px;
+        height: 350px;
+    }
+    main section .contaBox .box i{
+        width: 50%;
+        height: 50%;
+    }
+}  
+@media(max-width:520px){
+    main .bigBox{
+        height: fit-content;
+        width: 270px;
+        padding: 20px 40px;
+        position: relative;
+        top: 50px;
+    }
+    main section .imgBox {
+        width: 300px;
+        height: 350px;
+    }
+    main section .contaBox{
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+    }
+}
