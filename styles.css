@@ -32,7 +32,6 @@ main section .contaBox{
     position: relative;
     bottom: 70px;
     justify-content: center;
-    flex-direction: column;
 }
 main section .contaBox .box{
     border: 0.5px solid grey;
